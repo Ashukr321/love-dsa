@@ -1,25 +1,25 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
- void swap(int *a , int *b){
-  int temp = *a;
-    *b = *a;
-  *b = temp;
- }
-int main(){
-  int arr[]={1,2,3,4,5,6,7,8};
-  int n = size(arr);
-  int i = 0;
-  int j = n-1;
- 
-  while (i<j)
+
+int main()
+{
+  int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+  int size = sizeof(arr) / sizeof(int);
+  int start = 0;
+  int end = size - 1;
+  cout << "Extreme Elements are: \n";
+
+  while (start <= end)
   {
-    swap(arr[i],arr[j]);
-    i++;
-    j--;
-  }
-  
-  for (int k=0 ;k<n;k++){
- cout<<arr[k]<<" ";
+    
+    cout << arr[start] << " ";
+    if (start != end) { 
+      cout << arr[end] << " ";
+    }
+
+    start++;
+
+    end--;
   }
 
   return 0;
