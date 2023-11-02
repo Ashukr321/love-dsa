@@ -6,6 +6,7 @@ void printNum(int n){
   cout<<n<<endl;
   printNum(n-1);
 }
+
 int main(){
   int n ;
   cout<<"enter  your number"<<endl;
