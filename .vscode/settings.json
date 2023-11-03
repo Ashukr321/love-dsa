@@ -45,5 +45,6 @@
     "xstddef": "cpp",
     "xstring": "cpp",
     "xtr1common": "cpp"
-  }
+  },
+  "docwriter.style": "RustDoc"
 }
