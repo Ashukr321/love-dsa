@@ -6,6 +6,10 @@ int binarySearch(vector<int> v, int start, int end, int target)
 {
   while (start <= end)
   {
+
+
+  
+
     // calculate mid
     int mid = start + (end - start) / 2;
     if (v[mid] == target)
@@ -24,6 +28,7 @@ int binarySearch(vector<int> v, int start, int end, int target)
   return -1;
 }
 
+// main methods start here ...
 int main()
 {
   // create vector
